@@ -80,7 +80,7 @@ def build_regression_models(timeseries_dataset):
 
 
 
-        responses_bystate[state_index] = timestamp_models
+        #responses_bystate[state_index] = timestamp_models
 
     return responses_bystate
 
@@ -106,8 +106,8 @@ def main():
     timeseries_cases_dataset = pd.read_csv(timeseries_cases_path)
     timeseries_deaths_dataset = pd.read_csv(timeseries_deaths_path)
 
-    print(timeseries_cases_dataset.groupby('Province_State').nunique())
-    build_regression_models(timeseries_cases_dataset)
+    #print(timeseries_cases_dataset.groupby('Province_State').nunique())
+    #build_regression_models(timeseries_cases_dataset)
 
 
-main()
+#main()
